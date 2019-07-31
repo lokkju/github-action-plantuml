@@ -4,7 +4,7 @@ ARG PLANTUML_VERSION=1.2019.8
 ARG LANG=en_US.UTF-8
 
 LABEL "version"="1.0.0-$PLANTUML_VERSION"
-LABEL "com.github.actions.name"="plantuml-cli"
+LABEL "com.github.actions.name"="PlantUML CLI"
 LABEL "com.github.actions.description"="Allows generating various output files from PlantUML definitions"
 LABEL "com.github.actions.icon"="printer"
 LABEL "com.github.actions.color"="blue"
