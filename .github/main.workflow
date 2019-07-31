@@ -15,5 +15,5 @@ action "Docker Lint" {
 
 action "Integration Test" {
   uses = "./"
-  runs = ["/app/integration_test.sh"]
+  runs = ["sh","-c","/entrypoint.sh test/sequence.basic.puml -o .output/ && diff -q test/sequence.basic.png test/.output/sequence.basic.png"]
 }

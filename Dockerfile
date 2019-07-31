@@ -19,8 +19,6 @@ RUN apk add --virtual planuml-deps --no-cache graphviz ttf-droid ttf-droid-nonla
 
 COPY LICENSE README.md THIRD_PARTY_NOTICE.md /
 
-COPY "test/integration_test.sh" "/app/integration_test.sh"
-
 COPY "entrypoint.sh" "/entrypoint.sh"
 
 ENTRYPOINT ["/entrypoint.sh"]
